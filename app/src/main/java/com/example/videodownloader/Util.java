@@ -14,7 +14,10 @@ public class Util
 
         public static String shareChatDirectoryFacebook = "/My Story Saver/sharechat/";
 
-        public static File RootDirectory = new File(Environment.getExternalStorageDirectory()
+    public static String rootDirectoryInsta = "/My Story Saver/instagram/";
+
+
+    public static File RootDirectory = new File(Environment.getExternalStorageDirectory()
                 +"/Download/MyStorySaver/facebook");
 
         public static void createFolder()

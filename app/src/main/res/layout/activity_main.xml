@@ -4,13 +4,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#F8F6F6"
         tools:context=".MainActivity">
 
-        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -18,7 +21,7 @@
                 android:id="@+id/rel"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:background="#FBEA51">
+                android:background="#FDEF73">
 
                 <ImageView
                     android:id="@+id/logo"
@@ -46,7 +49,6 @@
 
 
 
-        </ScrollView>
 
 
         <LinearLayout
@@ -229,9 +231,71 @@
 
 
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="30dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/insta"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/insta_logo"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_arrow"
+                        android:layout_marginTop="40dp"
+                        android:layout_centerHorizontal="true">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/tv_insta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Instagram"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@+id/insta"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="45dp"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
         </LinearLayout>
 
 
     </RelativeLayout>
+
+    </ScrollView>
 
 </layout>

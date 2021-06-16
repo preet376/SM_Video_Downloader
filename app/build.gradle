@@ -52,5 +52,11 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT'
     implementation 'com.google.android.gms:play-services-ads:20.2.0'
+    // dependency on the latest commit in the master branch
+    implementation 'com.github.jitpack:gradle-simple:master-SNAPSHOT'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+
 
 }

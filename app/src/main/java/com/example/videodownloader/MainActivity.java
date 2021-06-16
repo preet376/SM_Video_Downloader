@@ -78,6 +78,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        binding.insta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this, InstaActivity.class));
+            }
+        });
+
+        binding.tvInsta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this, InstaActivity.class));
+            }
+        });
+
+
 
 
 
